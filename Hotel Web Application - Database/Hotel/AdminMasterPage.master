@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td style="text-align: center">
+                    <asp:Label ID="Label1" runat="server" BackColor="White" BorderColor="White" Font-Bold="True" Font-Italic="True" Font-Names="Arial" Font-Size="X-Large" ForeColor="#3333FF" Text="Welcome To Hotel"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="auto-style1">
+                        <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/EmpeloyeeList.aspx">EmpeloyeeList </asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/GuestList.aspx">GuestList </asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/RoomList.aspx">RoomList</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Payment.aspx">Payment</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Manager.aspx">Manager</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Signin.aspx">SignOut</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: 700; text-align: center">Mahmoud Mohamed Mahmoud Desoky 20182987&nbsp; ||&nbsp; Reem Sherif Taha 20190411</td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>
